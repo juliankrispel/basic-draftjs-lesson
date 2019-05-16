@@ -1,9 +1,8 @@
 {
-  "name": "draft-js",
+  "name": "draft-js-beginner-setup",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "draft-js": "^0.10.5",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-scripts": "3.0.1"
