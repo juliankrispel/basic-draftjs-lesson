@@ -1,9 +1,16 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './App.css'
+import { Editor, EditorState } from 'draft-js'
+
+const initialState = EditorState.createEmpty()
 
 function App() {
+  const [editorState, setEditorState] = useState(initialState)
   return <div className="App">
-    This is where my app goes
+    <Editor
+      editorState={editorState}
+      onChange={setEditorState}
+    />
   </div>
 }
 
